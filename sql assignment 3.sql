@@ -14,7 +14,6 @@ inner join playlist as pl on plt.playlist_id = pl.playlist_id;
 -- c3) Combines track, album and artist tables using inner join and 
 -- also controls the album title that is equal to 'Let There Be Rock' while combining the tables.
 -- Then, fetchs all columns ordering by the milliseconds column that owns the track table. 
-select * from album;
 select * 
 from album as al
 inner join track as t on t.album_id = al.album_id and al.title = 'Let There Be Rock'
